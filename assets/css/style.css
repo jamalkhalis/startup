@@ -1,4 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@800&display=swap');
+
+@font-face {
+    font-family: 'basier_squareregular';
+    src: url('./font/basiersquare-regular/basiersquare-regular-webfont.eot');
+    src: url('./font/basiersquare-regular/basiersquare-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./font/basiersquare-regular/basiersquare-regular-webfont.woff2') format('woff2'),
+         url('./font/basiersquare-regular/basiersquare-regular-webfont.woff') format('woff'),
+         url('./font/basiersquare-regular/basiersquare-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	font-family: 'basier_squareregular';
+}
+
 #home {
-	background: url(../img/bg/bg-1.jpg) center center;
+	background: url(../img/bg/bg-1.jpg) center center no-repeat;
 	background-size: cover;
 }
+
+.h1 {
+	font-size: 3.5rem;
+	font-family: 'Barlow', sans-serif;
+}
+
