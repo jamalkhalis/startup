@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:display=swap');
 
 @font-face {
     font-family: 'basier_squareregular';
@@ -12,6 +12,15 @@
 
 }
 
+:root {
+	--black-violet: #0e305d;
+	--gray: #808996;
+}
+
+.ff-barlow {
+	font-family: 'Barlow', sans-serif;
+}
+
 body {
 	font-family: 'basier_squareregular';
 }
@@ -23,6 +32,25 @@ body {
 
 .h1 {
 	font-size: 3.5rem;
-	font-family: 'Barlow', sans-serif;
 }
 
+.color-black-violet {
+	color: var(--black-violet);
+}
+
+.bg-black-violet {
+	background: var(--black-violet);
+}
+
+.color-gray {
+	color: var(--gray);
+}
+
+.vh-50 {
+	height: 50vh;
+}
+
+.circle {
+	height: 60px;
+	width: 60px;
+}
