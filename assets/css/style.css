@@ -23,8 +23,12 @@
 
 body {
 	font-family: 'basier_squareregular';
+	font-size: 15px;
 }
 
+section {
+	background: white;
+}
 #home {
 	background: url(../img/bg/bg-1.jpg) center center no-repeat;
 	background-size: cover;
@@ -135,4 +139,40 @@ transform: translateX(0);
 	background: url(../img/bg/bg-4.jpg) top left no-repeat;
 	background-size: cover;
 	font-size: 2.6rem;
+}
+
+.square {
+	width: 80px;
+	height: 82px;
+}
+
+#message {
+	background: url(../img/bg/bg-5.jpg) top left no-repeat;
+	background-size: cover;
+}
+
+input:focus,
+textarea:focus {
+  color: white;
+}
+
+#section-5 {
+	background: url(../img/bg/bg-6.jpg) top left no-repeat;
+	background-size: cover;
+	font-size: 2.6rem;
+}
+
+footer {
+	background: #161b27;
+}
+footer section {
+	background: #161b27;
+}
+
+.border-bottom-footer {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+footer a:hover, i:hover {
+	color: white;
 }
