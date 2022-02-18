@@ -60,28 +60,35 @@ function hideCollapseNavbar(hideNavbar) {
   var collapseNavbar = document.getElementById("navbarSupportedContent")
 
   hideNavbar.addEventListener('click', function (event) {
+    document.getElementById("buttonNavbarToggler").ariaExpanded = "false";
     collapseNavbar.classList.remove("show");
-    // collapseNavbar.classList.add("hide");
   })
 
 }
 
 var hideNavbar = document.getElementsByClassName('nav-link');
 
-hideCollapseNavbar(hideNavbar[0]);
-hideCollapseNavbar(hideNavbar[1]);
-hideCollapseNavbar(hideNavbar[2]);
-hideCollapseNavbar(hideNavbar[3]);
-hideCollapseNavbar(hideNavbar[4]);
-hideCollapseNavbar(hideNavbar[5]);
+for (var i = hideNavbar.length - 1; i >= 0; i--) {
+hideCollapseNavbar(hideNavbar[i]);
+}
 
 // Detect click outside of navbar-collabse and hide it
 window.addEventListener('click', function(e){ 
 
   if (document.getElementById('navbarSupportedContent').contains(e.target)){
-    // Clicked in box
+    // Clicked in box (navbar-toggler)
+
   } else{
+
+    // Clicked out bx (navbar-toggler)
     document.getElementById("navbarSupportedContent").classList.remove("show");
+    // document.getElementById("buttonNavbarToggler").ariaExpanded = "false";
+
   }
 
 });
+
+var svg = document.getElementsByClassName("svg-testimonials");
+for (var i = svg.length - 1; i >= 0; i--) {
+  svg[i].setAttribute("fill", "var(--four)");
+}
