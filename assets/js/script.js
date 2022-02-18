@@ -61,7 +61,7 @@ function hideCollapseNavbar(hideNavbar) {
 
   hideNavbar.addEventListener('click', function (event) {
     collapseNavbar.classList.remove("show");
-    collapseNavbar.classList.add("hide");
+    // collapseNavbar.classList.add("hide");
   })
 
 }
@@ -74,3 +74,14 @@ hideCollapseNavbar(hideNavbar[2]);
 hideCollapseNavbar(hideNavbar[3]);
 hideCollapseNavbar(hideNavbar[4]);
 hideCollapseNavbar(hideNavbar[5]);
+
+// Detect click outside of navbar-collabse and hide it
+window.addEventListener('click', function(e){ 
+
+  if (document.getElementById('navbarSupportedContent').contains(e.target)){
+    // Clicked in box
+  } else{
+    document.getElementById("navbarSupportedContent").classList.remove("show");
+  }
+
+});
