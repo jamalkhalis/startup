@@ -32,7 +32,6 @@ detectWidth(newWidth);// Call function at run time
 
 window.addEventListener('resize', function(event){
     detectWidth(window.innerWidth);
-    console.log(window.innerWidth);
 });
 
 
@@ -53,3 +52,25 @@ items.forEach((el) => {
         next = next.nextElementSibling
     }
 })
+
+// function to hide the navbar-collapse header
+
+function hideCollapseNavbar(hideNavbar) {
+
+  var collapseNavbar = document.getElementById("navbarSupportedContent")
+
+  hideNavbar.addEventListener('click', function (event) {
+    collapseNavbar.classList.remove("show");
+    collapseNavbar.classList.add("hide");
+  })
+
+}
+
+var hideNavbar = document.getElementsByClassName('nav-link');
+
+hideCollapseNavbar(hideNavbar[0]);
+hideCollapseNavbar(hideNavbar[1]);
+hideCollapseNavbar(hideNavbar[2]);
+hideCollapseNavbar(hideNavbar[3]);
+hideCollapseNavbar(hideNavbar[4]);
+hideCollapseNavbar(hideNavbar[5]);

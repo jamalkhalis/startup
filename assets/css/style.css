@@ -30,9 +30,10 @@ section {
 	background: white;
 }
 #home {
-	background: url(../img/bg/bg-1.jpg) center center no-repeat;
+	background: url(../img/bg/bg-12.jpg) top left no-repeat;
 	background-size: cover;
 }
+
 
 .h1 {
 	font-size: 3.5rem;
@@ -48,6 +49,16 @@ section {
 
 .color-gray {
 	color: var(--gray);
+}
+
+@media (max-width: 576px) {
+	#home h1 {
+	font-size: 2rem;
+	}
+
+	#home p, #home div a {
+	font-size: 15px;
+	}
 }
 
 .vh-50 {
