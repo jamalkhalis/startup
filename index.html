@@ -30,13 +30,11 @@
 						<span></span>
 						<span></span>
 
-						<!-- <i class="bi bi-sliders text-black fs-2"></i> -->
-
 					</button>
 					<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 						<ul id="navbar-nav-id" class="navbar-nav px-4">
 							<li class="nav-item">
-								<a class="nav-link ps-0 px-lg-3 py-3 py-lg-4 active" aria-current="page" href="#">Home</a>
+								<a class="nav-link ps-0 px-lg-3 py-3 py-lg-4 active" aria-current="page" href="index.html">Home</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link ps-0 px-lg-3 py-3 py-lg-4" href="#services">Services</a>
@@ -82,25 +80,69 @@
 		<div class="container pb-lg-5 mt-lg-5 mb-lg-2">
 
 			<h2 class=" text-center text-color-two my-5 pb-5 fw-bold">Our services</h2>
-			<div class="row">
+			<div class="row ps-3 ps-sm-0">
 
-				<div class="col-lg-4 mb-3">
-					<div class="card border-0">
-						<img class="card-img" src="./assets/img/bg/fb-1.jpg">
-						<div class="card-img-overlay">
-							<h5 class="card-title h-100 d-flex justify-content-center align-items-center">
-								<a href="#" class="btn btn-light shadow-none btn-lg text-color-two fw-bold">Advertising ideas</a>
+				<div class="col-lg-4 my-3">
+
+					<div class="card h-100 border-0" id="cardHover">
+						<img class="card-img h-100" src="./assets/img/bg/bg-2.jpg">
+						<div class="card-img-overlay" id="collapseServicesOverlay1">
+							<h5 class="card-title">
+								<a id="collapseServicesTag1" class="btn btn-color-two btn-lg shadow-none fw-bold mt-n ms-n stretched-link" data-bs-toggle="collapse" href="#collapseServices1" role="button" aria-expanded="false" aria-controls="collapseServices1">
+									Advertising ideas
+								</a>
 							</h5>
+
+							<div class="collapse text-color-one" id="collapseServices1">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								
+							</div>
 						</div>
 					</div>
+
 				</div>
 
-				<div class="col-lg-4 mb-3">
-					<img class="img-fluid" src="./assets/img/bg/fb-2.jpg">
+				<div class="col-lg-4 my-3">
+
+					<div class="card h-100 border-0">
+						<img class="card-img h-100" src="./assets/img/bg/bg-3.jpg">
+						<div class="card-img-overlay" id="collapseServicesOverlay2">
+							<h5 class="card-title">
+								<a class="btn btn-color-two btn-lg shadow-none fw-bold mt-n ms-n stretched-link" data-bs-toggle="collapse" href="#collapseServices2" role="button" aria-expanded="false" aria-controls="collapseServices2">
+									Artistic production
+								</a>
+							</h5>
+
+							<div class="collapse text-color-one" id="collapseServices2">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								
+							</div>
+						</div>
+					</div>
+
 				</div>
 
-				<div class="col-lg-4 mb-3">
-					<img class="img-fluid" src="./assets/img/bg/fb-3.jpg">
+				<div class="col-lg-4 my-3">
+
+					<div class="card h-100 border-0">
+						<img class="card-img h-100" src="./assets/img/bg/bg-4.jpg">
+						<div class="card-img-overlay" id="collapseServicesOverlay3">
+							<h5 class="card-title">
+								<a class="btn btn-color-two btn-lg shadow-none fw-bold mt-n ms-n stretched-link" data-bs-toggle="collapse" href="#collapseServices3" role="button" aria-expanded="false" aria-controls="collapseServices3">
+									Public relations
+								</a>
+							</h5>
+
+							<div class="collapse text-color-one" id="collapseServices3">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								
+							</div>
+						</div>
+					</div>
+
 				</div>
 
 			</div>
@@ -198,7 +240,7 @@
 				</div>
 
 				<div class="col-lg-6 py-4">
-					<img class="img-fluid shadow-lg" src="./assets/img/bg/chart-1.png">
+					<img class="img-fluid shadow-lg" src="./assets/img/bg/bg-5.jpg">
 				</div>
 
 			</div>
@@ -206,10 +248,11 @@
 		</div>
 
 		<div id="presentation" class="py-5">
+
 			<div class="container">
 				<div class="row py-5">
 
-					<div class="col-lg-6  fw-bold text-white text-lg-end lh-sm mb-5">
+					<div class="col-lg-6 fw-bold text-color-one text-lg-end lh-sm mb-5">
 						Great things in business are
 						never done by one person.
 						They’re done by a team of
@@ -217,14 +260,34 @@
 					</div>
 
 					<div class="col-lg-6 d-flex align-items-center ps-lg-5">
-						<button class="btn btn-warning circle-2 rounded-circle me-4 ms-lg-5">
+
+						<!-- Button trigger modal -->
+						<button class="btn btn-warning circle-2 rounded-circle me-4 ms-lg-5 shadow-none" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalPresentation">
 							<i class="bi bi-play-fill fs-2"></i>
 						</button>
-						<small class="text-white fs-4">See our presentation</small>
+
+						<small class="text-color-one fs-4">See our presentation</small>
+
+						<!-- Modal -->
+						<div class="modal fade" id="exampleModalPresentation" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+							<div class="modal-dialog modal-dialog-centered modal-xl">
+
+								<div class="modal-content">
+
+									<div class="modal-body ratio ratio-16x9">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/T9GvDekiJ9c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
 					</div>
 
 				</div>
 			</div>
+
 		</div>
 
 	</section>
@@ -448,9 +511,7 @@
 			<h2 class=" text-center text-color-two my-5 pb-3 fw-bold pb-lg-5">Contact Us</h2>
 			<div class="row pt-lg-5 pb-5">
 
-				<div class="col-lg-8 pe-lg-4">
-					<div class=" h-100 bg-color-two"></div>
-				</div>
+
 				
 				<div class="col-lg-4" id="message">
 					<form class="w-75 mx-auto pt-4 pb-5">
@@ -465,6 +526,10 @@
 						</button>
 
 					</form>
+				</div>
+
+				<div class="col-lg-8 pe-lg-4">
+					<img class="img-fluid" src="./assets/img/bg/bg-9.jpg">
 				</div>
 
 			</div>
