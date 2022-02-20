@@ -14,6 +14,8 @@
 	--two: #0e305d;
 	--three: #808996;
 	--four: #F8F9FA;
+	--five: rgb(148 163 184);
+	--six: rgb(16 29 45);
 }
 
 #collapseExample {
@@ -46,6 +48,10 @@
 
 .bg-color-four {
 	background: var(--four);
+}
+
+.text-color-five {
+	color: var(--five);
 }
 
 .btn-color-two {
@@ -105,8 +111,48 @@ section {
 }
 
 #home {
-	background: url(../img/bg/bg-1.jpg) top left no-repeat;
+/*	background: url(../img/bg/12.png) top left no-repeat;
 	background-size: cover;
+*/	
+
+    background-color: var(--six);
+	-webkit-clip-path: polygon(0 0,5760px 0,5760px calc(100% - 352px),0 100%);
+    clip-path: polygon(0 0,5760px 0,5760px calc(100% - 352px),0 100%);
+}
+
+#homeImage {
+	background: url(../img/bg/bg-9.jpg) center center no-repeat;
+	background-size: cover;	
+}
+
+
+
+@media (max-width: 992px) {
+	#homeEnd {
+		height: 50%;
+	}
+	#homeImageBorder {
+		width: 90%;
+		border: 1px solid var(--five);
+		z-index: -1;
+		position: absolute;
+		top: 3%;
+		left: 9%;
+	}
+}
+
+@media (min-width: 992px) {
+	#homeEnd {
+		height: 100%;
+	}
+	#homeImageBorder {
+		width: 90%;
+		border: 1px solid var(--five);
+		z-index: -1;
+		position: absolute;
+		top: 15%;
+		left: 10%;
+	}
 }
 
 .h1 {
@@ -115,7 +161,7 @@ section {
 
 @media (max-width: 576px) {
 	#home h1 {
-	font-size: 2rem;
+	font-size: 2.5rem;
 	}
 
 	#home p, #home div a {
@@ -138,6 +184,15 @@ section {
 .circle-1 {
 	height: 60px;
 	width: 60px;
+}
+
+.btn-outline-dark {
+	border-color: var(--six);
+	color: var(--six);
+}
+
+.btn-outline-dark:hover {
+	background: var(--six);
 }
 
 #presentation {
@@ -224,14 +279,19 @@ transform: translateX(0);
 }
 
 #message {
-	/*background: url(../img/bg/bg-1.jpg) top left no-repeat;*/
-	background: var(--two);
-	/*background-size: cover;*/
+	background: url(../img/bg/bg-1.jpg) top left no-repeat;
+	/*background: var(--two);*/
+	background-size: cover;
 }
 
 input:focus,
 textarea:focus {
   color: white;
+}
+
+#messageEnd{
+	background: url(../img/bg/bg-9.jpg) top left no-repeat;
+	background-size: cover;
 }
 
 #section-5 {

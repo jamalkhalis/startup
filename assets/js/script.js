@@ -1,5 +1,11 @@
 var colorTwo = "#0e305d";
 
+document.getElementById("presentationTwo").style.backgroundColor = hexToRGB(colorTwo, 0.5);
+document.getElementById("infosTwo").style.backgroundColor = hexToRGB(colorTwo, 0.5);
+document.getElementById("section-4-Two").style.backgroundColor = hexToRGB(colorTwo, 0.5);
+document.getElementById("section-5-two").style.backgroundColor = hexToRGB(colorTwo, 0.5);
+
+
 function detectWidth(width) {
   if (width >= 992) { // If media query matches
     document.getElementById('headerId').classList.remove("navbar-light");
@@ -139,16 +145,48 @@ var collapseServicesOverlay3 = document.getElementById('collapseServicesOverlay3
 var collapseServices3 = document.getElementById('collapseServices3');
 collapseServices(collapseServices3, collapseServicesOverlay3);
 
-var cardHover = document.getElementById('cardHover');
 
-cardHover.addEventListener('mouseover', function () {
-  document.getElementById('collapseServices1').classList.add("show")
-  document.getElementById('collapseServicesOverlay1').style.backgroundColor = hexToRGB(colorTwo, 0.5);
 
-})
+function cardHoverForLargeScreen(cardHover, collapseServices, collapseServicesOverlay) {
 
-cardHover.addEventListener('mouseleave', function () {
-  document.getElementById('collapseServices1').classList.remove("show")
-  document.getElementById('collapseServicesOverlay1').style.backgroundColor = "";
+  cardHover.addEventListener('mouseover', function () {
+    collapseServices.classList.add("show")
+    collapseServicesOverlay.style.backgroundColor = hexToRGB(colorTwo, 0.5);
 
-})
+  })
+
+  cardHover.addEventListener('mouseleave', function () {
+    collapseServices.classList.remove("show")
+    collapseServicesOverlay.style.backgroundColor = "";
+
+  })
+
+}
+
+var cardHover1 = document.getElementById('cardHover1');
+var cardHover2 = document.getElementById('cardHover2');
+var cardHover3 = document.getElementById('cardHover3');
+
+document.addEventListener("DOMContentLoaded", function(){
+// make it clickable for smaller screens
+
+if (window.innerWidth > 992) {
+
+cardHoverForLargeScreen(cardHover1, collapseServices1, collapseServicesOverlay1);
+cardHoverForLargeScreen(cardHover2, collapseServices2, collapseServicesOverlay2);
+cardHoverForLargeScreen(cardHover3, collapseServices3, collapseServicesOverlay3);
+
+}// end if innerWidth
+
+}); 
+// DOMContentLoaded  end
+
+window.addEventListener('resize', function(event){
+    if (window.innerWidth > 992) {
+
+    cardHoverForLargeScreen(cardHover1, collapseServices1, collapseServicesOverlay1);
+    cardHoverForLargeScreen(cardHover2, collapseServices2, collapseServicesOverlay2);
+    cardHoverForLargeScreen(cardHover3, collapseServices3, collapseServicesOverlay3);
+
+    }
+});
