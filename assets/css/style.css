@@ -115,9 +115,9 @@ section {
 	background-size: cover;
 */	
 
-    background-color: var(--six);
+	background-color: var(--six);
 	-webkit-clip-path: polygon(0 0,5760px 0,5760px calc(100% - 352px),0 100%);
-    clip-path: polygon(0 0,5760px 0,5760px calc(100% - 352px),0 100%);
+	clip-path: polygon(0 0,5760px 0,5760px calc(100% - 352px),0 100%);
 }
 
 #homeImage {
@@ -128,9 +128,11 @@ section {
 
 
 @media (max-width: 992px) {
+
 	#homeEnd {
 		height: 50%;
 	}
+
 	#homeImageBorder {
 		width: 90%;
 		border: 1px solid var(--five);
@@ -139,12 +141,18 @@ section {
 		top: 3%;
 		left: 9%;
 	}
+
+	#home {
+		height: 50rem;
+	}
 }
 
 @media (min-width: 992px) {
+
 	#homeEnd {
 		height: 100%;
 	}
+
 	#homeImageBorder {
 		width: 90%;
 		border: 1px solid var(--five);
@@ -152,6 +160,10 @@ section {
 		position: absolute;
 		top: 15%;
 		left: 10%;
+	}
+
+	#home {
+		height: 100vh;
 	}
 }
 
@@ -279,19 +291,24 @@ transform: translateX(0);
 }
 
 #message {
-	background: url(../img/bg/bg-1.jpg) top left no-repeat;
-	/*background: var(--two);*/
-	background-size: cover;
+
+	background-color: var(--six);
+
 }
 
 input:focus,
-textarea:focus {
-  color: white;
+input,
+input:hover,
+textarea:focus,
+textarea,
+textarea:hover {
+  color: white !important;
 }
 
 #messageEnd{
 	background: url(../img/bg/bg-9.jpg) top left no-repeat;
 	background-size: cover;
+
 }
 
 #section-5 {
