@@ -68,6 +68,7 @@ a.btn-color-two:hover, a.btn-color-two:focus {
 body {
 	font-family: 'basier_squareregular';
 	font-size: 15px;
+	overflow-x: hidden;
 }
 
 /*Create a nice Hamburger Menu*/

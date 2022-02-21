@@ -190,3 +190,6 @@ window.addEventListener('resize', function(event){
 
     }
 });
+
+
+AOS.init();
